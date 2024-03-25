@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="flex items-centre justify-between">
+        <div class="left flex justfiy-right">
+          <div class="logo">
+            <img src="logo2.PNG" width="50px" alt="logo">
+          </div>
+          <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Qualification</a>
+            <a href="#">Blog</a></li>
+            <a href="#">More</a>
+          </div>
+        </div>
+        <div class="right" style="margin-top: -1rem;">
+          <a href="#contact"><button class="btn btn-primary">Contact</button></a>
+        </div>
+      </nav>
+    </div>
+    <div class="hero flex items-centre justify-between" id="home">
+      <div class="left flex-1 justify-center">
+        <img class="profile" src="myimg2.jpg" alt="Profile">
+      </div>
+      <div class="right flex-1" id="txt">
+        <h6>Aysha Akter Sumi</h6>
+        <h1>FRONT-END<br> <span>WEB Developer</span></h1>
+        <p>I'm an aspiring front-end developer who focuses on creating pixel perfect, visually appealing, user-friendly
+          websites!</p>
+        <div>
+          <a href="Resume.pdf" download><button class="btn btn-secondary">DOWNLOAD CV</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <div class="container flex items-centre">
+      <div class="left flex-1 justify-right">
+        <img src="myimg3.jpeg" height="400px" alt="profile pic">
+      </div>
+      <div class="right flex-1">
+        <h1>About <span>Me</span></h1>
+        <h3>Hello! I'm Aysha Akter Sumi.</h3>
+        <p>An Undergraduate Bsc student at Daffodil International University. I am an enthusiastic beginner front-end
+          developer eager to showcase proficiency in HTML,
+          CSS, and JavaScript through hands-on projects alongside an evolving collection of UI/UX designs.
+          Striving to blend creativity with functionality.Passionate about creating
+          responsive and user-friendly websites with a keen eye for design aesthetics.
+        </p>
+        <h3 style="color: var(--bgDark);">FIND ME IN</h3>
+        <div class="socials" id="socials">
+
+          <a href="mailto: ayshaamin680@gmail.com"><img src="email.png" width="40px"></a>
+          <a href="https://www.facebook.com/ayshamin.sumi.3"><img src="facebook.png" width="40px"></a>
+          <a href="https://www.instagram.com/aysha__amin_/"><img src="instagram.png" width="40px"></a>
+          <a href="https://www.linkedin.com/in/aysha-akter-sumi-144819294/"><img src="message.png" width="40px"></a>
+          <a href="https://github.com/ay-sha"><img src="github.png" width="40px"></a>
+
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="service">
+    <h2 style="color: var(--primary); text-align: center; margin-bottom: 1rem; margin-top: -5rem; font-size: 30px;">
+      Qualification</h2>
+    <div style="text-align: center; " id="button-group">
+      <button onclick="showSection('education')" class="btn btn-primary" style="width: 600px;">Education</button>
+      <button onclick="showSection('skills')" class="btn btn-primary" style="width: 600px;">Skills</button>
+      <button onclick="showSection('project')" class="btn btn-primary" style="width: 600px;">Project</button>
+
+    </div>
+
+    <div class="container">
+      <div id="education" class="column">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+              <h3>BSc in Computer Science & Engineering</h3>
+              <h4>Daffodil International University</h4>
+              <p>GPA- 3.92/4.00</p>
+              <p>2020 - 2024</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+              <h3>HSC</h3>
+              <h4>Birshrestha Noor Mohammad Public College</h4>
+              <p>GPA- 4.75/5.00</p>
+              <p>2017 - 2019</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <div class="content">
+              <h3>SSC</h3>
+              <h4>K.L.Jubilee School and College</h4>
+              <p>GPA- 5.00/5.00</p>
+              <p>2009 - 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="column hidden">
+        <div class="skills-container">
+          <div class="skill">
+            <h3>C</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%; "></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>C++</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Python</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Figma</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="project" class="column hidden">
+        <div class="container">
+          <div class="card-grid">
+            <div class="card">
+              <img src="noteshare.jpg" style="height: 200px; width:350px">
+              <h2>DIU Note Sharing</h2>
+              <p> It is a full-stack user-friendly study material-sharing website for Daffodil International University
+                Students.</p>
+            </div>
+            <div class="card">
+              <img src="cargame.PNG" style="height: 200px; width: 350px;">
+              <h2>2D Car Game</h2>
+              <p>It is an OpenGL car game project. In this thrilling mobile game,
+                users take control of a car and navigate through congested roads.
+              </p>
+            </div>
+            <div class="card">
+              <img src="booke.PNG" style="height: 200px; width: 350px;">
+              <h2>BookE</h2>
+              <p>It is an online platform for buying and selling books and hearing audiobooks.
+                As well as build a prototype for apps. </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 style="color: var(--bgDark); text-align: center; margin-bottom: 1rem; margin-top: -5rem; font-size: 30px;">
+      Get in touch</h2>
+    <div class="container-cont">
+      <div class="column-left">
+        <img src="contact.png" alt="Image"/>
+        <h3>Aysha Akter Sumi</h3>
+        <p>Phone: +8801884394630</p>
+        <p>Email: ayshaamin680@gmail.com</p>
+        <div class="socials" id="socials">
+          <a href="mailto: ayshaamin680@gmail.com"><img src="email.png" width="40px"></a>
+          <a href="https://www.facebook.com/ayshamin.sumi.3"><img src="facebook.png" width="40px"></a>
+          <a href="https://www.instagram.com/aysha__amin_/"><img src="instagram.png" width="40px"></a>
+          <a href="https://www.linkedin.com/in/aysha-akter-sumi-144819294/"><img src="message.png" width="40px"></a>
+
+        </div>
+      </div>
+      <div class="column-right">
+        <form action="#" method="post">
+          <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="num">Phone:</label>
+            <input type="number" id="num" name="num" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+          </div>
+          <div class="form-field">
+            <button type="submit" class="btn btn-primary" style="text-align: center; margin-left: 7rem; width: 250px;">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
