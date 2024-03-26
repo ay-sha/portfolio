@@ -13,11 +13,13 @@
     margin: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 header {
     background-color: var(--bgDark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+    overflow: hidden;
 }
 
 header nav .left a {
@@ -99,6 +101,8 @@ section {
 {
     padding-left: 70px;
 }
+
+
 section.about h1 {
     margin-bottom: 1rem;
     font-size: 1.6rem;
@@ -317,6 +321,7 @@ section.services .card-grid .card:hover p {
     justify-content: space-between;
     gap: 10px;
     margin-top: 50px;
+    overflow: hidden;
   }
   
   .skill {
@@ -399,10 +404,14 @@ section.services .card-grid .card:hover p {
     width: 100%;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; 
    }
    
    textarea {
     resize: vertical;
    }
    
+   section.about, section.services,section.contact, .container, .container-cont{
+    overflow: hidden;
+}
+
